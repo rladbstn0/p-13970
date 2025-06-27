@@ -7,9 +7,9 @@ import java.time.LocalDateTime;
 public record PostDto(
         int id,
         LocalDateTime createDate,
-        LocalDateTime modifiyDate,
-        String subject,
-        String body
+        LocalDateTime modifyDate,
+        String title,
+        String content
 ) {
     public PostDto(Post post) {
         this(
